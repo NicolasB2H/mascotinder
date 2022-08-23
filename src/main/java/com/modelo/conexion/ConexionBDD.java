@@ -35,6 +35,7 @@ public class ConexionBDD {
 			conexionClass = new ConexionBDD();
 		}
 		return instancia;
+		///ESTE ES UN COMENTARIO MAMALON
 	}
 	
 	public static void cerrar(ResultSet rs) {
