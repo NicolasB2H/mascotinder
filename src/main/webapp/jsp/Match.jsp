@@ -6,8 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Match</title>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link href="../css/style.css" rel="stylesheet">
-  <link href="../css/style.css" rel="script">
+  <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
 </head>
 <body>
 	 <!-- partial:index.partial.html -->
@@ -57,8 +56,7 @@
         </svg>
       </div>
 
-      <div class="tinder--card" id="tinder--card"
-        style="background-image: url('img/perro1_1.jpg'); background-size: 100% 100% ;">
+      <div class="tinder--card" id="tinder--card" style="background-image: url('img/perro1_1.jpg'); background-size: 100% 100% ;">
 
         <div class="book-info">
           <div>
@@ -67,7 +65,7 @@
           </div>
         </div>
       </div>
-      <div class="tinder--card" style="background-image: url('img/perro2_1.jpg')">
+      <div class="tinder--card" id="tinder--card" style="background-image: url('../img/perro2_1.jpg'); background-size: 100% 100%;">
 
         <div class="book-info">
           <div>
@@ -87,8 +85,7 @@
   <!-- partial -->
   <script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="../js/deslizarFoto.js"></script>
-  <script src="../js/deslizarMatch.js"></script>
+  <script src="${pageContext.request.contextPath}/js/deslizarMatch.js"></script>
   <script>
     let index = 1;
     let foto = document.getElementById("tinder--card");
