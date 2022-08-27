@@ -1,0 +1,50 @@
+	#color-rosado{
+		color: #FF5864;
+	}
+	.bg-rosado{
+		background-color: #FF5864;
+		border: 1px solid #FF5864;
+	}
+	.wrapper{
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		padding:115px 0px;
+		text-align: center;
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/perrosLogin.jpg");
+		background-size: cover;
+		
+	}
+	.caja-texto{
+		display: flex;
+		color: white;
+		float: left;
+		margin-bottom: 0px;
+		height: 50px;
+		width: 100px;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		border-radius: 50px;
+	}
+	.caja-entrada{
+		display: flex;
+		border: 1px solid #C1C1C1;
+		float: left;
+		height: 50px;
+		width: 500px;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50px;
+		padding: 10px 10px 10px 25px;
+		
+	}
+	.caja-dato{
+		height: 100px;
+		margin: 50px;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		
+	}
