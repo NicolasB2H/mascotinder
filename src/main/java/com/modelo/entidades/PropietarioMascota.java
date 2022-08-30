@@ -1,6 +1,8 @@
 package com.modelo.entidades;
 
 import java.io.Serializable;
+import java.util.List;
+
 import javax.persistence.*;
 
 /**
@@ -17,15 +19,16 @@ public class PropietarioMascota implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "per_nombre")
+	@Column(name = "per_clave")
 	private String nombre;
 	
 	@Column(name = "per_clave")
 	private String password;
 	
-	@Column(name = "per_usuario")
+	@Column(name = "per_nombre")
 	private String usuario;
 	
+	private List<Mascota> listaMascotas;
 	
 
 	public PropietarioMascota() {
@@ -62,6 +65,16 @@ public class PropietarioMascota implements Serializable {
 
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
+	}
+	
+	
+
+	public List<Mascota> getListaMascotas() {
+		return listaMascotas;
+	}
+
+	public void setListaMascotas(List<Mascota> listaMascotas) {
+		this.listaMascotas = listaMascotas;
 	}
 
 	@Override
