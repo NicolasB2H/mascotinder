@@ -68,7 +68,6 @@ public class PropietarioMascota implements Serializable {
 	}
 	
 	
-
 	public List<Mascota> getListaMascotas() {
 		return listaMascotas;
 	}
