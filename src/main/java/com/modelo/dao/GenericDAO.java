@@ -4,10 +4,10 @@ import java.util.List;
 
 public interface GenericDAO <T,ID> {
 	public T getById(ID id);
-	public List<T> getMascotas();
+	public List<T> get();
 	
 	public void create(T p);
 	public void update(T p);
-	public void delete(ID id);
-
+	public void delete(T p);
+	public void deleteByID(ID id);
 }
