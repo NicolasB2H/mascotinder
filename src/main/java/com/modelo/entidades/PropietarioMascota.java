@@ -8,7 +8,7 @@ import javax.persistence.*;
  *
  */
 @Entity(name= "PROPIETARIO")
-public class Propietario implements Serializable {
+public class PropietarioMascota implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
@@ -28,7 +28,7 @@ public class Propietario implements Serializable {
 	
 	
 
-	public Propietario() {
+	public PropietarioMascota() {
 
 	}
 
