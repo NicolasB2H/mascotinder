@@ -1,5 +1,8 @@
 package com.modelo.dao;
 
-public interface PropietarioMascotaDAO extends GenericDAO<> {
+import com.modelo.entidades.PropietarioMascota;
 
+public interface PropietarioMascotaDAO extends GenericDAO<PropietarioMascota, Integer> {
+
+	public PropietarioMascota autorizarPropietarioMascota(String correo, String clave);
 }
