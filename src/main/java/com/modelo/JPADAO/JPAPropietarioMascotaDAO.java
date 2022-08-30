@@ -32,7 +32,7 @@ public class JPAPropietarioMascotaDAO extends JPAGenericDAO<PropietarioMascota, 
 	@Override
 	public PropietarioMascota autorizarPropietarioMascota(String correo, String clave) {
 		PropietarioMascota propietarioMascota = null;
-		String sentenceJPQL = "SELECT p from PropietarioMascota p WHERE p.correo= :param_nombre AND p.clave= :param_clave";
+		String sentenceJPQL = "SELECT p from PropietarioMascota p WHERE p.correo= :param_correo AND p.clave= :param_clave";
 		Query query = this.em.createQuery(sentenceJPQL);
 		query.setParameter("param_correo", correo);
 		query.setParameter("param_clave", clave);
