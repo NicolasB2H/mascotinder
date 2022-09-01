@@ -19,14 +19,14 @@ public class PropietarioMascota implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "per_clave")
-	private String nombre;
+	@Column(name = "per_correo")
+	private String correo;
 	
 	@Column(name = "per_clave")
-	private String password;
+	private String clave;
 	
 	@Column(name = "per_nombre")
-	private String usuario;
+	private String nombre;
 	
 	private List<Mascota> listaMascotas;
 	
@@ -43,6 +43,14 @@ public class PropietarioMascota implements Serializable {
 		this.id = id;
 	}
 
+	public String getPassword() {
+		return clave;
+	}
+
+	public void setPassword(String password) {
+		this.clave = password;
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -51,23 +59,6 @@ public class PropietarioMascota implements Serializable {
 		this.nombre = nombre;
 	}
 
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
-	}
-	
-	
 	public List<Mascota> getListaMascotas() {
 		return listaMascotas;
 	}
@@ -75,10 +66,19 @@ public class PropietarioMascota implements Serializable {
 	public void setListaMascotas(List<Mascota> listaMascotas) {
 		this.listaMascotas = listaMascotas;
 	}
+	
+
+	public String getCorreo() {
+		return correo;
+	}
+
+	public void setCorreo(String correo) {
+		this.correo = correo;
+	}
 
 	@Override
 	public String toString() {
-		return "Propietario [id=" + id + ", nombre=" + nombre + ", password=" + password + ", usuario=" + usuario + "]";
+		return "Propietario [id=" + id + ", nombre=" + nombre + ", password=" + clave + ", usuario=" + nombre + "]";
 	}
 	
 	
