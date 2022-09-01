@@ -77,4 +77,32 @@ public class JPAGenericDAO<T, ID>  implements GenericDAO<T, ID> {
 		return query.getResultList();
 	}
 
+
+	@Override
+	public List<T> get() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<T> getMocota(String nombreMasco, String nombrePropietario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public void delete(T p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void deleteByID(ID id) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
