@@ -51,10 +51,10 @@ public class LoginController extends HttpServlet {
 
 			PropietarioMascota propietarioAutenticado = DAOFactory.getFactory().getPropietarioMascotaDAO().autorizarPropietario(correo, clave);
 
-			if (personaAutenticada != null) {
+			if (propietarioAutenticado != null) {
 				// Creamos la sesiÃ³n
 				HttpSession misession = request.getSession(true);
-				misession.setAttribute("usuario", personaAutenticada);
+				misession.setAttribute("usuario", propietarioAutenticado);
 				request.getRequestDispatcher("listarPersonasController").forward(request, response);
 			} else {
 				System.out.println("al login");
