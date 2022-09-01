@@ -8,8 +8,8 @@ import javax.persistence.Query;
 
 public class JPAPropietarioMascotaDAO extends JPAGenericDAO<PropietarioMascota, Integer>  implements PropietarioMascotaDAO{
 
-	public JPAPropietarioMascotaDAO(Class<PropietarioMascota> persistentClass) {
-		super(persistentClass);
+	public JPAPropietarioMascotaDAO() {
+		super(PropietarioMascota.class);
 	}
 
 	@SuppressWarnings("unchecked")

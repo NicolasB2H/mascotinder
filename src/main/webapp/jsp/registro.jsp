@@ -29,7 +29,7 @@
 		<div class="row">
 			<div class="col bg-light">
 				<div class="wrapper">
-					<form method="post"  action="">
+					<form method="post"  action="RegistroController">
 						<fieldset>			
 							<div class="caja-dato">
 								<strong><legend id="color-rosado">REGISTRO</legend></strong>
@@ -38,8 +38,16 @@
 								<div class="caja-texto boton rounded-circle">
 									<i class="fas fa-solid fa-user fa-2x" style="color:#FF5864;"></i>
 								</div>				
-								<input type="text" name="correo" class="caja-entrada" placeholder="Correo" required="required">
+								<input type="text" name="nombre" class="caja-entrada" placeholder="Nombre de Usuario" required="required">
 								
+							</div>
+							
+							<div class="caja-dato">
+								<div class="caja-texto boton rounded-circle">
+									<i class="fas fa-solid fa-envelope fa-2x" style="color:#FF5864;"></i>
+								</div>				
+								<input type="text" name="correo" class="caja-entrada" placeholder="Correo" required="required">
+						
 							</div>
 							
 							<div class="caja-dato">
