@@ -23,8 +23,7 @@ public class LoginController extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
     public LoginController() {
-        super();
-      
+        
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -54,7 +53,7 @@ public class LoginController extends HttpServlet {
 			if (propietarioAutenticado != null) {
 				// Creamos la sesiÃ³n
 				HttpSession misession = request.getSession(true);
-				misession.setAttribute("usuario", propietarioAutenticado);
+				misession.setAttribute("correo", propietarioAutenticado);
 				request.getRequestDispatcher("listarPersonasController").forward(request, response);
 			} else {
 				System.out.println("al login");

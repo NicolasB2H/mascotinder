@@ -17,7 +17,7 @@ public class JPAPropietarioMascotaDAO extends JPAGenericDAO<PropietarioMascota, 
 	public List<PropietarioMascota> get() {
 		
 		List<PropietarioMascota> propietariosMascota = null;
-		String sentenceJPQL = "SELECT p from PropietarioMascota p ORDER BY p.nombre ASC";
+		String sentenceJPQL = "SELECT p from Propietario p ORDER BY p.nombre ASC";
 		Query query = this.em.createQuery(sentenceJPQL);
 		try {
 			propietariosMascota = query.getResultList();
@@ -44,7 +44,7 @@ public class JPAPropietarioMascotaDAO extends JPAGenericDAO<PropietarioMascota, 
 	@Override
 	public PropietarioMascota autorizarPropietario(String correo, String clave) {
 		PropietarioMascota propietarioAutorizada = null;
-		String sentenceJPQL = "SELECT p from Propietario p WHERE p.correo= :param_nombre AND p.clave= :param_clave";
+		String sentenceJPQL = "SELECT p from Propietario p WHERE p.correo= :param_correo AND p.clave= :param_clave";
 		Query query = this.em.createQuery(sentenceJPQL);
 		query.setParameter("param_correo", correo);
 		query.setParameter("param_clave", clave);
