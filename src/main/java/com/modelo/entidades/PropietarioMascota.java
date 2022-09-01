@@ -78,7 +78,7 @@ public class PropietarioMascota implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Propietario [id=" + id + ", nombre=" + nombre + ", password=" + password + ", usuario=" + usuario + "]";
+		return "Propietario [id=" + id + ", nombre=" + nombre + ", password=" + password + ", usuario=" + nombre + "]";
 	}
 	
 	
