@@ -11,11 +11,11 @@ import com.modelo.dao.DAOFactory;
 import com.modelo.entidades.PropietarioMascota;
 
 
-@WebServlet("/ResgistroController")
-public class ResgistroController extends HttpServlet {
+@WebServlet("/RegistroController")
+public class RegistroController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
-    public ResgistroController() {
+    public RegistroController() {
         super();
        
     }
@@ -31,9 +31,8 @@ public class ResgistroController extends HttpServlet {
 		propietarioMascotaModelo.setCorreo(request.getParameter("correo"));
 		propietarioMascotaModelo.setPassword(request.getParameter("password"));
 		
-		DAOFactory.getFactory().
-	
-		
+		DAOFactory.getFactory().getPropietarioMascotaDAO().create(propietarioMascotaModelo);
+		request.getRequestDispatcher("LoginController").forward(request, response);		
 	}
 
 }

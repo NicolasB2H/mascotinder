@@ -3,7 +3,6 @@ package com.modelo.JPADAO;
 import java.util.List;
 
 import com.modelo.dao.PropietarioMascotaDAO;
-import com.modelo.entidades.Persona;
 import com.modelo.entidades.PropietarioMascota;
 import javax.persistence.Query;
 

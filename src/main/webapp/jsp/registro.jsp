@@ -29,7 +29,7 @@
 		<div class="row">
 			<div class="col bg-light">
 				<div class="wrapper">
-					<form method="post"  action="RegistroController">
+					<form method="post"  action="../RegistroController">
 						<fieldset>			
 							<div class="caja-dato">
 								<strong><legend id="color-rosado">REGISTRO</legend></strong>

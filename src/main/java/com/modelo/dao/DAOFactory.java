@@ -3,6 +3,7 @@ package com.modelo.dao;
 import com.modelo.JPADAO.JPADAOFactory;
 
 public abstract class DAOFactory {
+	
 	protected static DAOFactory factory= new JPADAOFactory();
 	
 	public static DAOFactory getFactory() {
@@ -10,6 +11,5 @@ public abstract class DAOFactory {
 	}
 	public abstract PropietarioMascotaDAO getPropietarioMascotaDAO();
 	
-	public abstract PropietarioMascotaDAO getPropietarioMascotaDAO();
 
 }

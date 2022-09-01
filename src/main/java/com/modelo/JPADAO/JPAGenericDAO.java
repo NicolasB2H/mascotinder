@@ -17,7 +17,7 @@ public class JPAGenericDAO<T, ID>  implements GenericDAO<T, ID> {
 	
 	public JPAGenericDAO(Class<T> persistentClass) {
 		this.persistentClass = persistentClass;
-		this.em = Persistence.createEntityManagerFactory("mascotinder-halcones").createEntityManager();
+		this.em = Persistence.createEntityManagerFactory("mascotinder").createEntityManager();
 	}
 	
 	
@@ -55,14 +55,14 @@ public class JPAGenericDAO<T, ID>  implements GenericDAO<T, ID> {
 	}
 
 	@Override
-	public void delete(ID id) {
-		// TODO Auto-generated method stub
+	public void delete(T id) {
+		int a=3;
 		
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<T> getMascotas() {
+	public List<T> get() {
 		// Se crea un criterio de consulta
 		CriteriaBuilder criteriaBuilder = em.getCriteriaBuilder();
 		CriteriaQuery<T> criteriaQuery = criteriaBuilder.createQuery(this.persistentClass);
@@ -79,30 +79,16 @@ public class JPAGenericDAO<T, ID>  implements GenericDAO<T, ID> {
 
 
 	@Override
-	public List<T> get() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
-	public List<T> getMocota(String nombreMasco, String nombrePropietario) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
-	public void delete(T p) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-	@Override
 	public void deleteByID(ID id) {
 		// TODO Auto-generated method stub
 		
+	}
+
+
+	@Override
+	public List<T> get(Integer id1) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
