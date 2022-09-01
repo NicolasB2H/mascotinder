@@ -15,7 +15,7 @@ public class ConexionBDD {
 		try {
 			if(instancia == null) {
 				String servidor = "localhost";
-				String database = "gestorpersonas";
+				String database = "mascotinder-halcones";
 				String url="jdbc:mysql://" + servidor + "/" + database;
 				String usuario = "root";
 				String password = "";

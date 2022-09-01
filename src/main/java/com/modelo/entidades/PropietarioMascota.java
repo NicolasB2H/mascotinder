@@ -23,7 +23,7 @@ public class PropietarioMascota implements Serializable {
 	private String correo;
 	
 	@Column(name = "per_clave")
-	private String password;
+	private String clave;
 	
 	@Column(name = "per_nombre")
 	private String nombre;
@@ -44,11 +44,11 @@ public class PropietarioMascota implements Serializable {
 	}
 
 	public String getPassword() {
-		return password;
+		return clave;
 	}
 
 	public void setPassword(String password) {
-		this.password = password;
+		this.clave = password;
 	}
 	
 	public String getNombre() {
@@ -78,7 +78,7 @@ public class PropietarioMascota implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Propietario [id=" + id + ", nombre=" + nombre + ", password=" + password + ", usuario=" + usuario + "]";
+		return "Propietario [id=" + id + ", nombre=" + nombre + ", password=" + clave + ", usuario=" + nombre + "]";
 	}
 	
 	
