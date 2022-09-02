@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.modelo.dao.DAOFactory;
+
 
 @WebServlet("/RegistrarMascotaController")
 public class RegistrarMascotaController extends HttpServlet {
@@ -18,10 +20,17 @@ public class RegistrarMascotaController extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.sendRedirect("jsp/registrarMascota.jsp");
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	}
+	
+	private void procesarSolicitud(HttpServletRequest request, HttpServletResponse response) {
+		request.setAttribute("mascota", DAOFactory.getFactory());
+		
+		//response.sendRedirect("jsp/registrarMascota.jsp");
 	}
 
 }
